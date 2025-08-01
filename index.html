@@ -173,49 +173,25 @@
 </section>
 <!-- END OF REVISED "COMMON ISSUES" SECTION -->
 
-
-<!-- START OF MODEL ARCHITECTURE SECTIONS -->
-
-<!-- Relevant Wordlists Construction -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-left">Relevant Wordlists Construction</h2>
-    <div class="columns is-vcentered">
-      <div class="column">
-        <p>
-          The process of constructing relevant wordlists for each agent. KeyBert extracts keywords from documents, and a synthesizer agent designs the wordlists based on each agent's role and the given keywords. This ensures each agent has access to a tailored knowledge base, improving relevance and accuracy.
-        </p>
-      </div>
-      <div class="column">
-        <figure class="image">
-          <img src="static/images/111.png" alt="Diagram for Relevant Wordlists Construction"/>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Knowledge Graph Partitioning and Aggregation -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-left">Knowledge Graph Partitioning and Aggregation</h2>
-    <div class="columns is-vcentered">
-      <div class="column">
-        <figure class="image">
+    <h2 class="title is-3 has-text-left">ASK-RAG</h2>
+    <!-- This div removes the two-column layout for a top-down structure -->
+    <div>
+        <figure class="image" style="max-width: 75%; margin: 0 auto 1.5rem auto;">
           <img src="static/images/333.png" alt="Diagram for Knowledge Graph Partitioning and Aggregation"/>
         </figure>
-      </div>
-      <div class="column">
-        <p>
-          An overview of ASK-RAG's partitioning and aggregation method. The process starts from the root knowledge graph and uses flow-based partitioning with relevant wordlists. Subsequently, similarity-based aggregation uses a GNN to combine graph structure and semantic information, creating refined sub-graphs for each agent.
-        </p>
-      </div>
+        <div class="content">
+            <p class="has-text-justified">
+                ASK-RAG (Agent-Specific Knowledge RAG) is a novel method to improve the multi-agent framework's performance. It first constructs agent-specific wordlists, then uses these lists to perform flow-based partitioning and similarity-based aggregation on a root knowledge graph. This process creates tailored, refined sub-graphs, providing each agent with a more professional and comprehensive knowledge base while reducing irrelevant noise.
+            </p>
+        </div>
     </div>
   </div>
 </section>
 
 <!-- Reasoning with Backtracking -->
-<section class="section">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-left">Reasoning with Backtracking</h2>
     <div class="columns is-vcentered">
@@ -233,7 +209,7 @@
   </div>
 </section>
 
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered">Results</h2>
