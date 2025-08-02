@@ -199,6 +199,12 @@
         <p>
           A comparison of reasoning methods. Typical VLMs perform a blind search, which can lead to irrelevant and redundant results. In contrast, AstroVLM's Reasoning with Backtracking (RwB) process enables an accurate and reasonable diagnosis by structuring the search space into a Collaborative Reasoning Tree, greatly improving error localization.
         </p>
+        <p>
+          <strong>Chain-of-Backtracking (CoB):</strong> When an agent identifies a potential error, a central coordinator is alerted. The coordinator then notifies agents responsible for previous steps, prompting them to re-examine their processes. This creates a "chain of backtracking," where each agent in the chain assesses its relevance to the error and reports its confidence.
+        </p>
+        <p>
+            <strong>Collaborative Reasoning Tree (CRT):</strong> The individual reasoning chains from the CoB process are aggregated into a comprehensive tree structure. The CRT visualizes all possible causal paths for an error, with each node representing an agent's analysis. By evaluating the structure of this tree and the confidence scores at each node, the coordinator can collaboratively and robustly determine the most probable root cause of the problem.
+        </p>
       </div>
       <div class="column">
         <figure class="image">
